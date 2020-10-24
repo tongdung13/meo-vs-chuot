@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>meo va chuot</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+function MyRat(name,weight,speed,living,died,speak){
+    this.name = name;
+    this.weight = weight;
+    this.speed = speed;
+    this.living = living;
+    this.died = died;
+    this.speak = speak;
+
+    this.getName = function (){
+        return name;
+    }
+    this.getWeight = function (){
+        return weight;
+    }
+    this.getSpeed = function (){
+        return speed;
+    }
+    this.getLiving = function (){
+        return living;
+    }
+    this.getDied =  function (){
+        return died;
+    }
+    this.getSpeak = function (){
+        return speak;
+    }
+}
+function MyCat(name1,weight1,speed1,speak1,eat){
+    this.name1 = name1;
+    this.weight1 = weight1;
+    this.speed1 = speed1;
+    this.speak1 = speak1;
+    this.eat = eat;
+
+    this.getName1 = function (){
+        return name1;
+    }
+    this.getWeight1 =function (){
+        return weight1;
+    }
+    this.getSpeed1 = function (){
+        return speed1;
+    }
+    this.getSpeak1 = function (){
+        return speak1;
+    }
+    this.getEat = function (){
+        return eat;
+    }
+}
+
+let rat = new MyRat("rat",4,12,"true",'',"chit chit");
+let name = rat.getName();
+let weight = rat.getWeight();
+let speed = rat.getSpeed();
+let living = rat.getLiving();
+let died = rat.getDied();
+let speak = rat.getSpeak();
+
+let cat = new MyCat("cat",12,21,"miao miao",);
+let name1 = cat.getName1();
+let weight1 = cat.getWeight1();
+let speed1 = cat.getSpeed1();
+let speak1 = cat.getSpeak1();
+let eat = cat.getEat();
+
+document.write(rat + '');
+document.write(cat + '');
+</script>
